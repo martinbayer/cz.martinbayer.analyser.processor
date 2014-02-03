@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Processor
+Bundle-SymbolicName: cz.martinbayer.analyser.processor
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.jface.resource
+Export-Package: cz.martinbayer.analyser.processors
+Require-Bundle: cz.martinbayer.analyser;bundle-version="1.0.0"
