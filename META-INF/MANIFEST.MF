@@ -9,4 +9,5 @@ Import-Package: cz.martinbayer.utils,
  org.eclipse.jface.resource,
  org.osgi.framework;version="1.7.0"
 Export-Package: cz.martinbayer.analyser.processors
-Require-Bundle: cz.martinbayer.analyser;bundle-version="1.0.0"
+Require-Bundle: cz.martinbayer.analyser;bundle-version="1.0.0",
+ org.eclipse.swt
