@@ -11,4 +11,10 @@ public interface IProcessorItemWrapper<T extends IXMLog> {
 
 	void mouseDoubleClicked(MouseEvent e);
 
+	/**
+	 * Returns wrapper which contains distinct processor logic instance created
+	 * 
+	 * @return
+	 */
+	IProcessorItemWrapper<T> getInstance();
 }
