@@ -19,21 +19,40 @@ public abstract class BasicProcessorPaletteItem implements
 	private Class<? extends LogProcessor<? extends IXMLog>> clazz;
 
 	/** Path must be initialized before image is gained */
-	protected String path;
+	protected String imagePath;
+	protected String disabledImagePath;
 
 	@Override
 	public ImageDescriptor getImageDescriptor() {
-		return prepareImgDesc(path);
+		return prepareImgDesc(imagePath);
 	}
 
 	@Override
 	public ImageDescriptor getSmallImageDescriptor() {
-		return ImageUtils.resize(prepareImgDesc(path), 20, 20, true);
+		return ImageUtils.resize(prepareImgDesc(imagePath), 20, 20, true);
 	}
 
 	@Override
 	public ImageDescriptor getImageDescriptor(int width, int height) {
-		return ImageUtils.resize(prepareImgDesc(path), width, height, true);
+		return ImageUtils
+				.resize(prepareImgDesc(imagePath), width, height, true);
+	}
+
+	@Override
+	public ImageDescriptor getDisabledImageDescriptor() {
+		return prepareImgDesc(disabledImagePath);
+	}
+
+	@Override
+	public ImageDescriptor getDisabledSmallImageDescriptor() {
+		return ImageUtils.resize(prepareImgDesc(disabledImagePath), 20, 20,
+				true);
+	}
+
+	@Override
+	public ImageDescriptor getDisabledImageDescriptor(int width, int height) {
+		return ImageUtils.resize(prepareImgDesc(disabledImagePath), width,
+				height, true);
 	}
 
 	@Override

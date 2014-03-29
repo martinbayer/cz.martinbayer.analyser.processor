@@ -42,4 +42,10 @@ public interface IProcessorsPaletteItem {
 	public Class<? extends LogProcessor<? extends IXMLog>> getType();
 
 	public String getLabel();
+
+	public ImageDescriptor getDisabledImageDescriptor();
+
+	public ImageDescriptor getDisabledSmallImageDescriptor();
+
+	public ImageDescriptor getDisabledImageDescriptor(int width, int height);
 }
