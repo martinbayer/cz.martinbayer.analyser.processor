@@ -5,6 +5,8 @@ import org.eclipse.swt.events.MouseEvent;
 import cz.martinbayer.analyser.processors.model.IXMLog;
 
 public interface IProcessorItemWrapper<T extends IXMLog> {
+	public static final String SERVICE_NAME = "IProcessorItemWrapper";
+
 	IProcessorLogic<T> getProcessorLogic();
 
 	IProcessorsPaletteItem getProcessorPaletteItem();
