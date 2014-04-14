@@ -1,10 +1,12 @@
 package cz.martinbayer.analyser.processors;
 
+import java.io.Serializable;
+
 import org.eclipse.swt.events.MouseEvent;
 
 import cz.martinbayer.analyser.processors.model.IXMLog;
 
-public interface IProcessorItemWrapper<T extends IXMLog> {
+public interface IProcessorItemWrapper<T extends IXMLog> extends Serializable {
 	public static final String SERVICE_NAME = "IProcessorItemWrapper";
 
 	IProcessorLogic<T> getProcessorLogic();

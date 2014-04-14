@@ -3,6 +3,8 @@
  */
 package cz.martinbayer.analyser.processors;
 
+import java.io.Serializable;
+
 import org.eclipse.jface.resource.ImageDescriptor;
 
 import cz.martinbayer.analyser.processors.model.IXMLog;
@@ -11,7 +13,7 @@ import cz.martinbayer.analyser.processors.types.LogProcessor;
 /**
  * @author Martin Bayer
  */
-public interface IProcessorsPaletteItem {
+public interface IProcessorsPaletteItem extends Serializable {
 
 	/**
 	 * Creates image descriptor for image - no resizing provided

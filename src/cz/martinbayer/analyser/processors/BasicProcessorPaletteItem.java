@@ -16,6 +16,11 @@ import cz.martinbayer.utils.StringUtils;
 public abstract class BasicProcessorPaletteItem implements
 		IProcessorsPaletteItem {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7901153044601272130L;
+
 	private Class<? extends LogProcessor<? extends IXMLog>> clazz;
 
 	/** Path must be initialized before image is gained */
