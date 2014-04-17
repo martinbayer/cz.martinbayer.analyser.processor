@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 
-import cz.martinbayer.analyser.processors.model.IXMLog;
+import cz.martinbayer.analyser.processors.model.IE4LogsisLog;
 import cz.martinbayer.analyser.processors.types.LogProcessor;
 
 /**
@@ -39,9 +39,9 @@ public interface IProcessorsPaletteItem extends Serializable {
 	 */
 	public ImageDescriptor getImageDescriptor(int width, int height);
 
-	public void setType(Class<? extends LogProcessor<? extends IXMLog>> clazz);
+	public void setType(Class<? extends LogProcessor<? extends IE4LogsisLog>> clazz);
 
-	public Class<? extends LogProcessor<? extends IXMLog>> getType();
+	public Class<? extends LogProcessor<? extends IE4LogsisLog>> getType();
 
 	public String getLabel();
 

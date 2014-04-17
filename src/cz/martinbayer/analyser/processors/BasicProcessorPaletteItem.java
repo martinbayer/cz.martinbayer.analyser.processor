@@ -8,7 +8,7 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.FrameworkUtil;
 
-import cz.martinbayer.analyser.processors.model.IXMLog;
+import cz.martinbayer.analyser.processors.model.IE4LogsisLog;
 import cz.martinbayer.analyser.processors.types.LogProcessor;
 import cz.martinbayer.utils.ImageUtils;
 import cz.martinbayer.utils.StringUtils;
@@ -21,7 +21,7 @@ public abstract class BasicProcessorPaletteItem implements
 	 */
 	private static final long serialVersionUID = 7901153044601272130L;
 
-	private Class<? extends LogProcessor<? extends IXMLog>> clazz;
+	private Class<? extends LogProcessor<? extends IE4LogsisLog>> clazz;
 
 	/** Path must be initialized before image is gained */
 	protected String imagePath;
@@ -61,12 +61,12 @@ public abstract class BasicProcessorPaletteItem implements
 	}
 
 	@Override
-	public void setType(Class<? extends LogProcessor<? extends IXMLog>> clazz) {
+	public void setType(Class<? extends LogProcessor<? extends IE4LogsisLog>> clazz) {
 		this.clazz = clazz;
 	}
 
 	@Override
-	public Class<? extends LogProcessor<? extends IXMLog>> getType() {
+	public Class<? extends LogProcessor<? extends IE4LogsisLog>> getType() {
 		return this.clazz;
 	}
 

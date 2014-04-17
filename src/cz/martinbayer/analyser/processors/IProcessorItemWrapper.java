@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 import org.eclipse.swt.events.MouseEvent;
 
-import cz.martinbayer.analyser.processors.model.IXMLog;
+import cz.martinbayer.analyser.processors.model.IE4LogsisLog;
 
-public interface IProcessorItemWrapper<T extends IXMLog> extends Serializable {
+public interface IProcessorItemWrapper<T extends IE4LogsisLog> extends Serializable {
 	public static final String SERVICE_NAME = "IProcessorItemWrapper";
 
 	IProcessorLogic<T> getProcessorLogic();
