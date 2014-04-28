@@ -60,16 +60,6 @@ public abstract class BasicProcessorPaletteItem implements
 				height, true);
 	}
 
-	@Override
-	public void setType(Class<? extends LogProcessor<? extends IE4LogsisLog>> clazz) {
-		this.clazz = clazz;
-	}
-
-	@Override
-	public Class<? extends LogProcessor<? extends IE4LogsisLog>> getType() {
-		return this.clazz;
-	}
-
 	/**
 	 * Prepares image descriptor
 	 * 
